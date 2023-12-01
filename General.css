@@ -1,0 +1,172 @@
+.nav-selected{
+    font-style: italic;
+}
+
+.nav.nav-selected{
+    color: black;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin-top: 0;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 3px solid black;
+    align-items: center;
+    text-align: center;
+
+}
+
+.nav{
+    font-size: 20pt;
+    font-weight: bold;
+    color: rgb(125, 125, 125);
+    transition: all 0.5s;
+
+}
+
+.nav:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+main{
+    font-size: 15pt;
+    margin: 0 80px;
+    padding: 10px 80px;
+    border: solid black;
+    border-width: 0 2px;
+    box-shadow: 3px 3px 5px 2px ;
+    margin-top: 10px;
+
+    @media (max-width: 800px) {
+        margin: 0 10px;
+        padding: 10px 20px;
+        margin-left: 40px;
+        margin-top: 10px;
+
+    }
+}
+
+main > p:first-child{
+  margin-top: 0;
+}
+
+/* Бургер меню */
+
+.menu-button-container {
+    display:none;
+
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition-duration: .25s;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+  background-color: red;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+  background-color: red;
+}
+
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+.click-box{
+  background-color: rgba(0, 0, 0, 0);
+  width: 30px; height: 24px;
+  position: absolute;
+  top: -10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .menu-button-container {
+    display:block;
+    position: relative;
+    top: 20px;
+  }
+
+  #small-screen{
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+}
+
+/* Бургер меню */
+
+
+
+
+pre{
+  white-space: pre-wrap;
+  text-align: justify;
+  font-family: "Times";
+}
+
+p{
+  text-align: justify;
+}
+
+main li{
+  font-weight: bold;
+  /* font-size: 1.1em ; */
+  /* font-size: 16pt ; */
+
+
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.chapter{
+  font-style: italic;
+  font-size: 1.5rem ;
+}

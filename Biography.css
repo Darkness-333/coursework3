@@ -1,0 +1,8 @@
+pre{
+    pointer-events:none;
+}
+
+main{
+    overflow: hidden;
+}
+
