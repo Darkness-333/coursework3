@@ -3,6 +3,7 @@ let n=document.getElementsByTagName("nav");
 let cont=document.getElementById("burger-container");
 
 if(window.innerWidth<1200){
+    console.log(checkbox);
     let isCheck=localStorage.getItem("check");
     if(isCheck=="true") checkbox.checked=true;
     else checkbox.checked=false;
