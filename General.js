@@ -1,7 +1,11 @@
+let checkbox;
+let n;
+let cont;
+
 window.onload=function(){
-  let checkbox=document.getElementById("menu-toggle");
-  let n=document.getElementsByTagName("nav");
-  let cont=document.getElementById("burger-container");
+  checkbox=document.getElementById("menu-toggle");
+  n=document.getElementsByTagName("nav");
+  cont=document.getElementById("burger-container");
 
 }
 
