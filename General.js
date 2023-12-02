@@ -1,6 +1,10 @@
-let checkbox=document.getElementById("menu-toggle");
-let n=document.getElementsByTagName("nav");
-let cont=document.getElementById("burger-container");
+window.onload=function(){
+  let checkbox=document.getElementById("menu-toggle");
+  let n=document.getElementsByTagName("nav");
+  let cont=document.getElementById("burger-container");
+
+}
+
 
 if(window.innerWidth<1200){
     console.log(checkbox);
