@@ -6,7 +6,6 @@ window.onload=function(){
   checkbox=document.getElementById("menu-toggle");
   n=document.getElementsByTagName("nav");
   cont=document.getElementById("burger-container");
-
 }
 
 
