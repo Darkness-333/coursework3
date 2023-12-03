@@ -15,5 +15,17 @@ for (let elem of li){
             next.style.display="none";
         }
     }
+}
 
+
+if(localStorage.getItem("changePage")=="true"){
+    localStorage.setItem("changePage", "false");
+
+    setTimeout(function() {
+        window.scrollBy(0, -50);
+    }, 10);
+
+    let id=localStorage.getItem("id");
+    let scientist=document.getElementById(id);
+    scientist.style.color="red";
 }

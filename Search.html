@@ -4,9 +4,10 @@
 <head>
   <title>Известные ученые</title>
   <link rel="stylesheet" href="General.css">
-  <!-- <link rel="stylesheet" href="Menu.css"> -->
+  <link rel="stylesheet" href="Search.css">
   <link rel="icon" href="pictures/favicon.png">
-  <script src="General.js" async></script>
+  <script src="General.js" defer></script>
+  <script src="Search.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 </head>
@@ -26,7 +27,6 @@
       <a href="Menu.html"><div class="nav">Главное меню</div></a>
       <a href="Biography.html"><div class="nav ">Биографии</div></a>
       <a href="Quiz.html"><div class="nav">Викторины</div></a>
-
       <a href="Facts.html"><div class="nav">Интересные факты</div></a>
       <a href="Gallery.html"><div class="nav">Фотогалерея</div></a>
       <a href="Search.html"><div class="nav nav-selected">Поиск</div></a>
@@ -34,8 +34,9 @@
 
   </header>
 
-  <main>
-Поиск по сайту
+  <main id="main">
+    
+    <input id="search" type="text" placeholder="Поиск ученого на сайте 🔍" spellcheck="false">
   </main>
 
 
