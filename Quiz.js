@@ -1,134 +1,134 @@
 const newtonQ=[
 {
-    q: "newton?",
+    q: "Кем был отец Ньютона?",
     a: [
-        { text: "Gandhinagar", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
+        { text: "Фермером", isCorrect: true },
+        { text: "Ученым", isCorrect: false },
+        { text: "Учителем", isCorrect: false },
     ]
 },
 {
-    q: "What is capital of India?",
+    q: "Где учился Ньютон?",
     a: [
-        { text: "Gandhinagar", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
+        { text: "Оксфорд", isCorrect: false },
+        { text: "Парижский", isCorrect: false },
+        { text: "Кембридж", isCorrect: true },
     ]
 },
 {
-    q: "What is capital of India?",
+    q: "Где умер Ньютон?",
     a: [
-        { text: "Gandhinagar", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
+        { text: "Париж", isCorrect: false },
+        { text: "Лондон", isCorrect: false },
+        { text: "Кенсингтон", isCorrect: true },
     ]
 },
 ]
 
 const einsteinQ=[
     {
-        q: "einstein?",
+        q: "Где родился Эйнштейн?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Италия", isCorrect: false },
+            { text: "Германия", isCorrect: true },
+            { text: "Англия", isCorrect: false },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "В каком году Эйнштейн закончил обучение?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "1900", isCorrect: true },
+            { text: "1910", isCorrect: false },
+            { text: "1920", isCorrect: false },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "Что является трудом Эйнштейна?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Теория тяготения", isCorrect: false },
+            { text: "Теория струн", isCorrect: false },
+            { text: "Теория относительности", isCorrect: true },
         ]
     },
 ]
 
 const curiQ=[
     {
-        q: "curi?",
+        q: "В какой семье родилась Кюри?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Бедной", isCorrect: true },
+            { text: "Среднего достатка", isCorrect: false },
+            { text: "Богатой", isCorrect: false },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "Как звали мужа Кюри?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Эрнест", isCorrect: false },
+            { text: "Петр", isCorrect: false },
+            { text: "Пьер", isCorrect: true },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "В какой области Кюри получила вторую Нобелевскую премию?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Физика", isCorrect: false },
+            { text: "Литература", isCorrect: false },
+            { text: "Химия", isCorrect: true },
         ]
     },
 ]
 
 const darwinQ=[
     {
-        q: "What is capital of India?",
+        q: "Кем был отец Дарвина?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Финансистом", isCorrect: false },
+            { text: "Врачем", isCorrect: false },
+            { text: "Все варианты верны", isCorrect: true },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "Что нравилось Дарвину в детстве?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Литература", isCorrect: false },
+            { text: "Математика", isCorrect: false },
+            { text: "Биология", isCorrect: true },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "В каком году умер Дарвин?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "1801", isCorrect: false },
+            { text: "1865", isCorrect: false },
+            { text: "1882", isCorrect: true },
         ]
     },
 ]
 
 const mendeleevQ=[
     {
-        q: "What is capital of India?",
+        q: "Каким ребенком по счету был Менделеев?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "2", isCorrect: false },
+            { text: "17", isCorrect: true },
+            { text: "5", isCorrect: false },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "Какая болезнь была у Менделеева?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Туберкулез легких", isCorrect: true },
+            { text: "Диабет", isCorrect: false },
+            { text: "Сколиоз", isCorrect: false },
         ]
     },
     {
-        q: "What is capital of India?",
+        q: "Какое уравнение разработал Менделеев?",
         a: [
-            { text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Уравнение касательной", isCorrect: false },
+            { text: "Кинетическое уравнение", isCorrect: false },
+            { text: "Уравнение состояния идеального газа", isCorrect: true },
         ]
     },
 ]
