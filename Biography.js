@@ -35,7 +35,9 @@ for (let elem of li){
     elem.style.cursor="pointer";
     elem.onclick=function(){
         let next=elem.nextElementSibling;
-        console.log(next.textContent);
+        let img=next.getElementsByTagName("img")[0];
+        // console.log(img[0]);
+        // console.log(next.textContent);
         if(next.style.display=="none"){
             // next.style.height="auto";
             // next.style.opacity="1";
@@ -43,19 +45,40 @@ for (let elem of li){
             // next.style.fontSize="15pt";
             next.style.display="block";
 
+            img?.animate(
+                [
+                    {height: "0"},
+                    {height: "300px"}
+                ],
+                {
+                    duration:500
+                }
+            );
+
             next.animate(
                 animation,
                   {
                     duration: 500,
                     direction: "reverse"
                   },
-            )
+            );
         }
         else{
             // next.style.height="0";
             // next.style.opacity="0";
             // next.style.margin="0";
             // next.style.fontSize="0";
+
+            img?.animate(
+                [
+                    {height: "300px"},
+                    {height: "0"},
+                ],
+                {
+                    duration:500
+                }
+            );
+
             setTimeout(() => {
                 next.style.display="none";
             }, 500);
@@ -66,7 +89,7 @@ for (let elem of li){
                   {
                     duration: 500,
                   },
-            )
+            );
         }
     }
 }

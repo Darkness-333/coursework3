@@ -4,9 +4,10 @@
 <head>
   <title>Известные ученые</title>
   <link rel="stylesheet" href="General.css">
-  <!-- <link rel="stylesheet" href="Menu.css"> -->
+  <link rel="stylesheet" href="Quiz.css">
   <link rel="icon" href="pictures/favicon.png">
   <script src="General.js" defer></script>
+  <script src="Quiz.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 </head>
@@ -34,7 +35,26 @@
   </header>
 
   <main>
+    <p>Проверьте, насколько хорошо вы знаете биографию ученого.</p>
 
+    <select id="scientist-list">
+      <option value="newton">Исаак Ньютон</option>
+      <option value="einstein">Альберт Эйнштейн</option>
+      <option value="curi">Мария Склодовская-Кюри</option>
+      <option value="darwin">Чарльз Дарвин</option>
+      <option value="mendeleev">Дмитрий Менделеев</option>
+    </select>
+<br>
+    <button onclick="start()">Начать тест</button>
+
+    <div id="score"></div>
+    <div id="panel">
+      <div class="question" id="ques"></div>
+      <div class="options" id="opt"></div>
+      <button onclick="checkAns()" id="btnCheck">Проверить</button>
+      <button onclick="nextQuestion()" id="btnNext">Следующий вопрос</button>
+      <!-- <script src="q.js"></script> -->
+    </div>
   </main>
 
 

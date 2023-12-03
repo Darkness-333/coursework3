@@ -48,6 +48,7 @@ function createScientist(index){
 function createButton(text, targetElementId, page) {
     var button = document.createElement('button');
     button.textContent = text;
+    button.style.marginBottom="10px";
     button.addEventListener('click', function() {
         window.open(page+ '#' + targetElementId, '_blank');
         localStorage.setItem("changePage", "true");
