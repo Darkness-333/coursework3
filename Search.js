@@ -4,18 +4,13 @@ let idList=["newton", "einstein", "curi", "darwin", "mendeleev"];
 let search=document.getElementById("search");
 let main=document.getElementById("main");
 
-
 search.oninput=function(){
-
-
-
     let scientistDivs=document.querySelectorAll("main div");
     for (let elem of scientistDivs){
         elem.remove();
     }
 
     let text=search.value.toLowerCase();
-    console.log(text.toLowerCase());
     for (let i=0;i<nameList.length;i++){
         if(text=="") break;
         let elem=nameList[i].toLowerCase();
@@ -23,8 +18,6 @@ search.oninput=function(){
             createScientist(i);
         }
     }
-
-
 }
 
 function createScientist(index){
@@ -33,7 +26,6 @@ function createScientist(index){
     let name=document.createElement("p");
     name.textContent=nameList[index];
     scientist.appendChild(name);
-
 
     var button1 = createButton('Главное меню', idList[index], "Menu.html");
     var button2 = createButton('Биография', idList[index], "Biography.html");
@@ -57,10 +49,3 @@ function createButton(text, targetElementId, page) {
 
     return button;
 }
-
-
-
-
-
-
-

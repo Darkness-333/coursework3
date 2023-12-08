@@ -139,10 +139,7 @@ main > p:first-child{
 
 }
 
-/* Бургер меню */
-
-
-
+/* Бургер меню (конец) */
 
 pre{
   white-space: pre-wrap;
@@ -156,10 +153,6 @@ p{
 
 main li{
   font-weight: bold;
-  /* font-size: 1.1em ; */
-  /* font-size: 16pt ; */
-
-
 }
 
 .bold{

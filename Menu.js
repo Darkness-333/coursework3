@@ -17,7 +17,6 @@ for (let elem of li){
     }
 }
 
-
 if(localStorage.getItem("changePage")=="true"){
     localStorage.setItem("changePage", "false");
 

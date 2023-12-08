@@ -42,7 +42,6 @@
     background: linear-gradient(-45deg, rgb(246, 70, 70), rgb(112, 3, 3));
 }
 
-
 .social-links a:hover::after{
     top: 0px;
 }
@@ -50,32 +49,24 @@
     cursor: pointer;
 }
 #social-media{
-  text-align: center;
-  font-size: 15pt;
-  font-weight: bold;
-  margin-bottom: 5px;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 footer{
+    font-size: 15pt;
+    margin: 0 80px;
+    padding: 10px 80px;
+    border: solid black;
+    border-width: 0 2px;
+    box-shadow: 3px -3px 5px 3px ;
+    margin-top: 20px;
 
-
-  font-size: 15pt;
-  margin: 0 80px;
-  padding: 10px 80px;
-  border: solid black;
-  border-width: 0 2px;
-  box-shadow: 3px -3px 5px 3px ;
-  /* margin-top: 10px; */
-  margin-top: 20px;
-
-
-  @media (max-width: 800px) {
-      margin: 0 10px;
-      padding: 10px 20px;
-      margin-left: 40px;
-      /* margin-top: 10px; */
-  margin-top: 20px;
-
-
-  }
+    @media (max-width: 800px) {
+        margin: 0 10px;
+        padding: 10px 20px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
 }
-

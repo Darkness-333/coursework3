@@ -1,11 +1,7 @@
-
 let checkbox=document.getElementById("menu-toggle");
 let n=document.getElementsByTagName("nav");
 
-
-
 if(window.innerWidth<1200){
-
   let isCheck=localStorage.getItem("check");
   if(isCheck=="true") checkbox.checked=true;
   else checkbox.checked=false;
@@ -28,6 +24,3 @@ window.onresize = function() {
     else n[0].style.display="block";
   }
 };
-
-
-

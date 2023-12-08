@@ -1,16 +1,10 @@
 let pre=document.getElementsByTagName("pre");
 for (let elem of pre){
-    // elem.style.height="0";
-    // elem.style.opacity="0";
-    // elem.style.margin="0";
-    // elem.style.fontSize="0";
     elem.style.display="none";
-
 }
 
 const animation=[
     {
-        // dispalay: "block",
         margin: "20px 0",
         height: "auto",
         opacity: "1",
@@ -36,13 +30,7 @@ for (let elem of li){
     elem.onclick=function(){
         let next=elem.nextElementSibling;
         let img=next.getElementsByTagName("img")[0];
-        // console.log(img[0]);
-        // console.log(next.textContent);
         if(next.style.display=="none"){
-            // next.style.height="auto";
-            // next.style.opacity="1";
-            // next.style.margin="20px 0";
-            // next.style.fontSize="15pt";
             next.style.display="block";
 
             img?.animate(
@@ -64,11 +52,6 @@ for (let elem of li){
             );
         }
         else{
-            // next.style.height="0";
-            // next.style.opacity="0";
-            // next.style.margin="0";
-            // next.style.fontSize="0";
-
             img?.animate(
                 [
                     {height: "300px"},

@@ -225,8 +225,9 @@ function nextQuestion() {
  
 function checkAns() {
     if(!answered){
-        answered=true;
         let userAns=document.querySelector('input[name="answer"]:checked');
+        if(!userAns) return;
+        answered=true;
         userAns.parentElement.style.color="red";
         const selectedAns = parseInt(userAns.value);
         if (Questions[currQuestion].a[selectedAns].isCorrect) {
@@ -248,7 +249,6 @@ function checkAns() {
     }
 
 }
-
 
 if(localStorage.getItem("changePage")=="true"){
     localStorage.setItem("changePage", "false");
